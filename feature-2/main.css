@@ -1,0 +1,68 @@
+:root {
+  --main-bg: #f2395a;
+  --card-bg: #fff;
+  --shadow: rgba(242, 57, 90, 0.3);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+section {
+  background-color: var(--main-bg);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+}
+
+section:hover .phone,
+section:hover .tablet,
+section:hover .desktop {
+  transform: translateY(10px) rotateY(-15deg);
+}
+
+.heading {
+  margin-left: 55%;
+}
+.phone,
+.tablet,
+.desktop {
+  background-color: var(--card-bg);
+  position: absolute;
+  box-shadow: 13px 13px 32px 0 var(--shadow);
+  transition: 1s;
+  transform: translateY(100%);
+}
+
+.phone {
+  width: 200px;
+  height: 280px;
+  left: 5%;
+  bottom: 0;
+  background: var(--card-bg) url("mobile.svg") center no-repeat;
+  z-index: 3;
+  transition-delay: 0.2s;
+}
+.tablet {
+  width: 300px;
+  height: 380px;
+  bottom: 0;
+  left: 10%;
+  z-index: 1;
+  background: var(--card-bg) url("tablet.svg") center no-repeat;
+  transition-delay: 0.4s;
+}
+.desktop {
+  width: 680px;
+  height: 480px;
+  bottom: 0;
+  left: 15%;
+  background: var(--card-bg) url("desktop.svg") center no-repeat;
+  transition-delay: 0.6s;
+}
