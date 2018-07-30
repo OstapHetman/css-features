@@ -1,0 +1,39 @@
+:root {
+  --main-bg: #3d385a;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--main-bg);
+}
+section {
+  perspective: 1000px;
+}
+.container {
+  width: 768px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 1s;
+  transform: rotateX(55deg) rotateY(10deg) rotateZ(-45deg);
+  transform-style: preserve-3d;
+}
+img {
+  max-width: 100%;
+}
+.card {
+  width: 200px;
+  margin: 15px;
+  transition: 0.3s;
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateZ(15px);
+}
+
+.container-origin {
+  transform: rotate(0);
+}
