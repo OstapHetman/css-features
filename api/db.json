@@ -18,5 +18,10 @@
     "linkText": "CSS Feature 4",
     "description": "CSS Envelope",
     "href": "feature-4/index.html"
+  },
+  {
+    "linkText": "CSS Feature 5",
+    "description": "Parallax Effect CSS",
+    "href": "feature-5/index.html"
   }
 ]

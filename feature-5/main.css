@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-top: 20%;
+  text-align: center;
+  transform-style: inherit;
+  width: 100vw;
+  color: #fff;
+}
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  transform-origin: center;
+  min-height: 100vh;
+  background-image: url("mountains-1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+  /* Parallax */
+  transform: translateZ(-1px) scale(2);
+}
