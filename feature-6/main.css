@@ -1,0 +1,14 @@
+@import "css/title-animation.css";
+@import "css/navigation.css";
+@import "css/card.css";
+@import "css/footer.css";
+
+body {
+  font-family: "GothamPro", sans-serif;
+  font-weight: normal;
+  color: #121212;
+}
+.home-page {
+  padding: 40px 0;
+  background-color: #f6f7fb;
+}

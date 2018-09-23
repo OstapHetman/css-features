@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "GothamPro-Light"; /* Имя шрифта */
+  src: url(../GothamPro-Light.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: "GothamPro"; /* Имя шрифта */
+  src: url(../GothamPro.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: "GothamPro-Bold"; /* Имя шрифта */
+  src: url(../GothamPro-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+.page-name__title {
+  font: 700 3.125rem/1.2 GothamPro-Bold, Arial, sans-serif;
+  text-align: center;
+  color: #fb7993;
+}
+.page-name__title span:first-child {
+  transform: translate(0);
+  opacity: 1;
+}
+.page-name__title span:first-child {
+  background-image: linear-gradient(
+    90deg,
+    #4c89fc 0,
+    #fb7993 20%,
+    #9356a9 50%,
+    #4c89fc 60%,
+    #fb7993 80%,
+    #9356a9
+  );
+  background-size: 200% 100%;
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradientAnimation 16s linear infinite 3s;
+}
+.page-name__title span:nth-child(2) {
+  font-family: "GothamPro-Light";
+  display: block;
+  font-weight: 300;
+  background: none;
+  color: #121212;
+}
+@-webkit-keyframes textGradientAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  40% {
+    background-position: 100% 0;
+  }
+  60% {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes textGradientAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  40% {
+    background-position: 100% 0;
+  }
+  60% {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
