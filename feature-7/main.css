@@ -1,3 +1,48 @@
-section {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+h2,
+ul {
+  margin: 0;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  background: #333;
+}
+.navbar ul li,
+.navbar ul {
+  padding: 10px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.section {
   height: 500px;
+  text-align: center;
+  color: #fff;
+  padding: 80px;
+}
+#about-me {
+  background: rebeccapurple;
+}
+#services {
+  background: rgb(51, 153, 127);
+}
+#projects {
+  background: rgb(168, 25, 97);
+}
+#Testimonials {
+  background: #333;
+}
+#contact {
+  background: rgb(73, 51, 153);
 }
